@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ParkJaeyun94.github.io/indexx-style/sitemap.xml
