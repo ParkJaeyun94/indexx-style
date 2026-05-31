@@ -68,3 +68,116 @@ footer p { margin: 0; opacity: .72; }
   .cards.two, .gallery-grid { grid-template-columns: 1fr; }
   .section { padding: 72px 6vw; }
 }
+.footer-policy-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-policy-buttons button {
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.footer-policy-buttons button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.policy-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px;
+}
+
+.policy-modal.is-open {
+    display: block;
+}
+
+.policy-modal-box {
+    max-width: 720px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 0 auto;
+    background: #fff;
+    color: #222;
+    padding: 40px;
+    position: relative;
+}
+
+.policy-modal-box h2 {
+    margin-bottom: 24px;
+}
+
+.policy-modal-box h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.policy-modal-box p {
+    line-height: 1.8;
+    color: #444;
+}
+
+.policy-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    border: 0;
+    background: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns:
+        2fr
+        1fr
+        1.2fr
+        1fr;
+
+    gap: 60px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.footer-link-btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 12px;
+
+    color: #aaa;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+}
+
+.footer-link-btn:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

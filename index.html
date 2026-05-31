@@ -98,9 +98,210 @@
     </section>
   </main>
 
-  <footer>
-    <strong>INDEXX STYLE</strong>
-    <p>© 2026 INDEXX STYLE. All rights reserved.</p>
+  <footer class="site-footer">
+      <div class="footer-container">
+
+          <!-- 브랜드 -->
+          <div class="footer-column">
+              <h3>INDEXX STYLE</h3>
+              <p>
+                  당신만의 무드를 스타일링합니다.<br>
+                  Inner Mood · Outer Mood
+              </p>
+          </div>
+
+          <!-- 회사정보 -->
+          <div class="footer-column">
+              <h4>Company</h4>
+              <p>함스튜디오 (Harm Studio)</p>
+              <p>대표자 전영준</p>
+              <p>사업자등록번호 205-97-83095</p>
+          </div>
+
+          <!-- 연락처 -->
+          <div class="footer-column">
+              <h4>Contact</h4>
+              <p>
+                  <a href="tel:01035497312">
+                      010-3549-7312
+                  </a>
+              </p>
+
+              <p>
+                  <a href="mailto:indexstylemag@gmail.com">
+                      indexstylemag@gmail.com
+                  </a>
+              </p>
+
+              <p>
+                  경기도 고양시 덕양구<br>
+                  동산1로1길 55
+              </p>
+          </div>
+
+          <!-- 정책 -->
+          <div class="footer-column">
+              <h4>Policy</h4>
+
+              <button class="footer-link-btn"
+                      onclick="openPolicy('privacy')">
+                  개인정보처리방침
+              </button>
+
+              <button class="footer-link-btn"
+                      onclick="openPolicy('terms')">
+                  이용약관
+              </button>
+          </div>
+
+      </div>
   </footer>
+
+  <!-- 개인정보처리방침 팝업 -->
+
+  <div id="privacyModal" class="policy-modal">
+      <div class="policy-modal-box">
+          <button class="policy-close" onclick="closePolicy('privacy')">×</button>
+
+          <h2>개인정보처리방침</h2>
+
+          <p>
+              함스튜디오(Harm Studio, 이하 "회사")는 이용자의 개인정보를 중요하게 생각하며,
+              「개인정보 보호법」 등 관련 법령을 준수합니다.
+          </p>
+
+          <h3>1. 수집하는 개인정보 항목</h3>
+          <p>
+              회사는 상담 및 서비스 문의를 위해 아래와 같은 개인정보를 수집할 수 있습니다.
+          </p>
+          <ul>
+              <li>이름</li>
+              <li>휴대전화번호</li>
+              <li>이메일 주소</li>
+              <li>상담 및 문의 내용</li>
+          </ul>
+
+          <h3>2. 개인정보의 수집 및 이용 목적</h3>
+          <ul>
+              <li>서비스 문의 및 상담 응대</li>
+              <li>예약 및 일정 안내</li>
+              <li>고객 관리 및 서비스 제공</li>
+              <li>서비스 품질 향상</li>
+          </ul>
+
+          <h3>3. 개인정보의 보유 및 이용 기간</h3>
+          <p>
+              수집된 개인정보는 수집 목적 달성 후 지체 없이 파기합니다.
+              단, 관련 법령에 따라 보존이 필요한 경우에는 해당 법령에서 정한 기간 동안 보관합니다.
+          </p>
+
+          <h3>4. 개인정보의 제3자 제공</h3>
+          <p>
+              회사는 이용자의 개인정보를 외부에 제공하지 않습니다.
+              다만 법령에 따라 요구되는 경우에는 예외로 합니다.
+          </p>
+
+          <h3>5. 개인정보의 파기</h3>
+          <p>
+              개인정보 보유 기간이 종료되거나 처리 목적이 달성된 경우
+              해당 정보를 복구할 수 없는 방법으로 안전하게 파기합니다.
+          </p>
+
+          <h3>6. 이용자의 권리</h3>
+          <p>
+              이용자는 언제든지 자신의 개인정보에 대한 열람, 정정, 삭제,
+              처리정지를 요청할 수 있습니다.
+          </p>
+
+          <h3>7. 개인정보 보호책임자</h3>
+          <p>
+              상호명 : 함스튜디오(Harm Studio)<br>
+              대표자 : 전영준<br>
+              이메일 : indexstylemag@gmail.com<br>
+              전화번호 : 010-3549-7312
+          </p>
+
+          <h3>8. 시행일</h3>
+          <p>
+              본 개인정보처리방침은 2026년 5월 31일부터 시행됩니다.
+          </p>
+      </div>
+  </div>
+
+  <!-- 이용약관 팝업 -->
+
+  <div id="termsModal" class="policy-modal">
+      <div class="policy-modal-box">
+          <button class="policy-close" onclick="closePolicy('terms')">×</button>
+          <h2>이용약관</h2>
+
+          <h3>제1조 (목적)</h3>
+          <p>
+              본 약관은 함스튜디오(Harm Studio)가 운영하는 INDEXX STYLE 홈페이지의
+              이용 조건 및 절차, 회사와 이용자의 권리와 의무를 규정함을 목적으로 합니다.
+          </p>
+
+          <h3>제2조 (서비스 내용)</h3>
+          <p>
+              회사는 홈페이지를 통해 다음 서비스를 제공합니다.
+          </p>
+          <ul>
+              <li>브랜드 소개</li>
+              <li>퍼스널 스타일링 서비스 안내</li>
+              <li>문의 및 상담 접수</li>
+              <li>기타 회사가 제공하는 서비스 안내</li>
+          </ul>
+
+          <h3>제3조 (이용자의 의무)</h3>
+          <p>
+              이용자는 관련 법령 및 본 약관을 준수하여야 하며,
+              타인의 권리를 침해하거나 서비스 운영을 방해하는 행위를 해서는 안 됩니다.
+          </p>
+
+          <h3>제4조 (지적재산권)</h3>
+          <p>
+              홈페이지 내 모든 콘텐츠, 이미지, 디자인, 문구 등의 저작권 및
+              지적재산권은 함스튜디오 또는 정당한 권리자에게 귀속됩니다.
+          </p>
+
+          <h3>제5조 (면책조항)</h3>
+          <p>
+              회사는 천재지변, 시스템 장애 등 불가항력적인 사유로 인해 발생한
+              서비스 이용 장애에 대하여 책임을 지지 않습니다.
+          </p>
+
+          <h3>제6조 (문의)</h3>
+          <p>
+              상호명 : 함스튜디오(Harm Studio)<br>
+              대표자 : 전영준<br>
+              이메일 : indexstylemag@gmail.com<br>
+              전화번호 : 010-3549-7312
+          </p>
+
+          <h3>제7조 (시행일)</h3>
+          <p>
+              본 약관은 2026년 5월 31일부터 시행됩니다.
+          </p>
+      </div>
+  </div>
+
 </body>
 </html>
+
+<script>
+    function openPolicy(type) {
+        const modal = document.getElementById(type + 'Modal');
+        if (modal) modal.classList.add('is-open');
+    }
+
+    function closePolicy(type) {
+        const modal = document.getElementById(type + 'Modal');
+        if (modal) modal.classList.remove('is-open');
+    }
+
+    window.addEventListener('click', function (event) {
+        if (event.target.classList.contains('policy-modal')) {
+            event.target.classList.remove('is-open');
+        }
+    });
+</script>
